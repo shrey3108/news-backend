@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: news-backend
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGO_URI
+        value: mongodb+srv://your_mongodb_connection_string
+      - key: PORT
+        value: 5000
